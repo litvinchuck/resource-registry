@@ -21,6 +21,7 @@ class ResourceController extends ActiveController
 
 		$query->andFilterWhere(['like', 'name', $get['name']]);
 		$query->andFilterWhere(['like', 'class_id', $get['class_id']]);
+		$query->andFilterWhere(['like', 'registration_number', $get['registration_number']]);
 		$dataProvider = new ActiveDataProvider([
 			'query' => $query,
 			'pagination' => [

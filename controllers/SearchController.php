@@ -33,10 +33,7 @@ class SearchController extends ActiveController
  
   $dataProvider = new ActiveDataProvider([
     'query' => $query,
-    'pagination' => [
-      'pageSize' => 4,
-      'pageParam' => 'page',
-    ],
+    'pagination' => false,
   ]);
  
   $query->andFilterWhere(['<=', "distance(coords_center_lat, coords_center_lng, $lat, $lng)", $radius]);
