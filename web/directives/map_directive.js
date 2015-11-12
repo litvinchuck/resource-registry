@@ -129,7 +129,6 @@
 						$scope.resourcesGeoJson.push(resource);
 					}
 					$scope.resourcesGeoJsonOn = true;
-					// $scope.options.resources.showResources = false;
 				}
 			});
 
@@ -193,38 +192,6 @@
 				}
 
 				function initAdding () {
-
-					// Controlls localisation
-
-					L.drawLocal.draw.toolbar.actions.title = 'Відмінити створювання';
-					L.drawLocal.draw.toolbar.actions.text = 'Відмінити';
-
-					L.drawLocal.draw.toolbar.undo.title = 'Видалити останню точку';
-					L.drawLocal.draw.toolbar.undo.text = 'Видалити останню точку';
-
-					L.drawLocal.draw.toolbar.buttons.polygon = 'Створити багатокутник';
-					L.drawLocal.draw.toolbar.buttons.rectangle = 'Створити прямокутник';
-
-					L.drawLocal.draw.handlers.polygon.tooltip.start = 'Натисніть на карту, щоб почати створювати багатокутник';
-					L.drawLocal.draw.handlers.polygon.tooltip.cont = 'Натисніть на карту, продовжити створювати багатокутник';
-					L.drawLocal.draw.handlers.polygon.tooltip.end = 'Натисніть на першу точку, щоб закінчити створювати багатокутник';
-
-					L.drawLocal.draw.handlers.rectangle.tooltip.start = 'Натисніть і потягніть, щоб створити прямокутник';
-
-					L.drawLocal.edit.toolbar.actions.save.title = 'Зберегти зміни';
-					L.drawLocal.edit.toolbar.actions.save.text = 'Зберегти';
-
-					L.drawLocal.edit.toolbar.actions.cancel.title = 'Відмінити. Видаляє усі зміни';
-					L.drawLocal.edit.toolbar.actions.cancel.text = 'Відмінити';
-
-					L.drawLocal.edit.toolbar.buttons.edit = 'Редагувати об\'єкт';
-					L.drawLocal.edit.toolbar.buttons.editDisabled = 'Відсутні об\'єкти для редагування';
-					L.drawLocal.edit.toolbar.buttons.remove = 'Видалити об\'єкт';
-					L.drawLocal.edit.toolbar.buttons.removeDisabled = 'Відсутні об\'єкти для видалення';
-
-					L.drawLocal.edit.handlers.edit.tooltip.text = 'Переміщайте точки для редагування';
-
-					L.drawLocal.edit.handlers.remove.tooltip.text = 'Натисніть на об\'єкт для видалення';
 
 					if (attrs.add === 'true') {
 						$scope.drawnItems = new L.FeatureGroup();

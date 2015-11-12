@@ -23,7 +23,6 @@
 		$scope.showPolygonOnMap = function (coordinates) {
 			$scope.options.showPolygonOnMap.showPolygon = true;
 			$scope.options.showPolygonOnMap.latlngs = coordinates;
-			console.log(coordinates);
 		}
 
 		$scope.toggleMap = function () {
@@ -32,14 +31,12 @@
 
 		$scope.$watch('options.resources.getResources', function(val) {
 			if (val) {
-				console.log('ok');
 				$scope.options.resources.hideResources = true;
 				$scope.options.resources.showResources = false;
 				$scope.options.resources.getResources = false;
 				SearchService.getResourceByCoordinates($scope.options.resources.center) 
 					.then(function (data) {
 						$scope.options.resources.objects = data.data.items;
-						console.log(data.data);
 						$scope.options.resources.showResources = true;
 					});
 			}

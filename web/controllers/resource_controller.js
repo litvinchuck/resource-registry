@@ -54,8 +54,6 @@
                     $rootScope.mapOptions.created = false;
                     $scope.coord_center.lat = center.lat.toFixed(4);
                     $scope.coord_center.lng = center.lng.toFixed(4);
-                    console.log($scope.coord_center.lng);
-            console.log($scope.coord_center.lat);
                 }
 
             });
@@ -320,9 +318,6 @@
 
             resource.coords_center_lat = $scope.coord_center.lat;
             resource.coords_center_lng = $scope.coord_center.lng;
-
-            console.log($scope.coord_center.lng);
-            console.log($scope.coord_center.lat);
 
             if (!owner || Object.keys(owner).length < constant.paramsNumber || !isDataForObject(owner)) {
                     //'Create Resource without owner'
