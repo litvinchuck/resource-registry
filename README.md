@@ -1,6 +1,9 @@
 Resource-registry project
 ============================
 
+Resource-registry project is a web [Yii 2](http://www.yiiframework.com/) application for the 
+decentralized property register of Natural Resources of Ukraine.
+
 CONTRIBUTORS
 ------------
 
@@ -10,9 +13,6 @@ CONTRIBUTORS
 * **[Vitalii Shevchuck](https://github.com/Vitashev)**
 * **[Yevhenii Stepanov](https://github.com/tird)**
 * **[Marian Turchyn](https://github.com/marianturchyn)**
-
-Resource-registry project is a web [Yii 2](http://www.yiiframework.com/) application for the 
-decentralized property register of Natural Resources of Ukraine.
 
 DIRECTORY STRUCTURE
 -------------------
