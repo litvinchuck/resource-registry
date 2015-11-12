@@ -61,7 +61,7 @@ Navigate to a root directory or any subdirectory located directly under the Web 
 You can then install this project using the following command:
 
 ~~~
-git clone https://github.com/litvinchuck/resource-registry.git
+git clone <repository url>
 ~~~
 
 Now you should be able to access the application through the following URL:
